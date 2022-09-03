@@ -2,17 +2,25 @@
   font-family: outfit;
   src: url(../font/Outfit-Regular.ttf);
 }
+.navLink,
 .active {
-  background-color: #0e0e0e !important;
-  color: white !important;
-  border-radius: 5px;
+  position: relative;
+}
+.navLink::after,
+.active::after {
+  position: absolute;
+  background: #0e0e0e;
+  content: "";
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: 0.3s;
 }
 
-.navLink {
-  border-radius: 5px;
-  border: 2px solid rgba(0, 0, 0, 0);
-  color: #0e0e0e;
-}
-.navLink:hover {
-  border: 2px solid #0e0e0e;
+.navLink:hover::after,
+.active::after {
+  transform: scaleX(1);
 }

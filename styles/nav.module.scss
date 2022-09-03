@@ -1,16 +1,23 @@
 @import '_theme.scss';
 
+.navLink,
 .active {
-	background-color: $dark !important;
-	color: white !important;
-	border-radius: 5px;
-}
-
-.navLink {
-	border-radius: 5px;
-	border: 2px solid rgba(0, 0, 0, 0);
-	color: $dark;
-	&:hover {
-		border: 2px solid $dark;
+	// color: $dark !important;
+	position: relative;
+	&::after {
+		position: absolute;
+		background: $dark;
+		content: '';
+		top: 100%;
+		left: 0;
+		width: 100%;
+		height: 2px;
+		transform: scaleX(0);
+		transform-origin: left;
+		transition: 0.3s;
 	}
+}
+.navLink:hover::after,
+.active::after {
+	transform: scaleX(1);
 }

@@ -55,7 +55,7 @@ export default function Navbar() {
 						{links.map((link, i) => (
 							<li key={i} className='nav-item mx-1'>
 								<CLink
-									className={`nav-link fw-bold px-3 py-1 ${style.navLink} ${
+									className={`nav-link fw-bold px-3 py-1 ${style.navLink}  ${
 										router.pathname === link.link && style.active
 									}`}
 									aria-current='page'
