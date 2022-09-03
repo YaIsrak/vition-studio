@@ -1,0 +1,10 @@
+@import '_theme.scss';
+
+* {
+	font-family: $font;
+	transition: 0.3s;
+}
+
+section {
+	padding: 15vmin 0;
+}

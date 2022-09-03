@@ -1,21 +1,24 @@
 {
-  "name": "vition-studio",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
-  },
-  "dependencies": {
-    "next": "12.2.5",
-    "react": "18.2.0",
-    "react-dom": "18.2.0"
-  },
-  "devDependencies": {
-    "eslint": "8.23.0",
-    "eslint-config-next": "12.2.5",
-    "tailwindcss": "^3.1.8"
-  }
+	"name": "vition-studio",
+	"version": "0.1.0",
+	"private": true,
+	"scripts": {
+		"dev": "next dev",
+		"build": "next build",
+		"start": "next start",
+		"lint": "next lint",
+		"tailbuild": "tailwindcss -i ./styles/css/input.css -o ./styles/css/output.css --watch"
+	},
+	"dependencies": {
+		"bootstrap": "^5.2.0",
+		"framer-motion": "^7.2.1",
+		"next": "12.2.5",
+		"react": "18.2.0",
+		"react-dom": "18.2.0"
+	},
+	"devDependencies": {
+		"eslint": "8.23.0",
+		"eslint-config-next": "12.2.5",
+		"tailwindcss": "^3.1.8"
+	}
 }

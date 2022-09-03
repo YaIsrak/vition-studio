@@ -1,22 +1,12 @@
-html,
-body {
-	padding: 0;
-	margin: 0;
-	font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-		Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+@font-face {
+  font-family: outfit;
+  src: url(../font/Outfit-Regular.ttf);
+}
+* {
+  font-family: outfit;
+  transition: 0.3s;
 }
 
-a {
-	color: inherit;
-	text-decoration: none;
-}
-
-@media (prefers-color-scheme: dark) {
-	html {
-		color-scheme: dark;
-	}
-	body {
-		color: white;
-		background: black;
-	}
+section {
+  padding: 15vmin 0;
 }

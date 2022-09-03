@@ -1,0 +1,16 @@
+@import '_theme.scss';
+
+.active {
+	background-color: $dark !important;
+	color: white !important;
+	border-radius: 5px;
+}
+
+.navLink {
+	border-radius: 5px;
+	border: 2px solid rgba(0, 0, 0, 0);
+	color: $dark;
+	&:hover {
+		border: 2px solid $dark;
+	}
+}
