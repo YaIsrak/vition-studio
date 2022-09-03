@@ -20,7 +20,7 @@ export default function HomeSec1() {
 		<section className='HomeSec1 h-screen'>
 			<div className='container info position-absolute top-50 start-50 translate-middle'>
 				<motion.h1
-					className='fw-bold text-center'
+					className='fw-bold text-center display-3'
 					variants={animation}
 					initial='hidden'
 					whileInView='show'
@@ -29,7 +29,7 @@ export default function HomeSec1() {
 				</motion.h1>
 				<Button
 					href='mailto:ysdn@gmail.com'
-					className='position-relative start-50 translate-middle-x'
+					className='fs-5 position-relative start-50 translate-middle-x'
 				>
 					Contact Now
 				</Button>
