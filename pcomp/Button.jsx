@@ -1,24 +1,6 @@
-import { motion } from 'framer-motion';
-
-const animation = {
-	hidden: {
-		opacity: 0,
-		y: 100,
-	},
-	show: {
-		opacity: 1,
-		y: 0,
-	},
-};
-
 export default function Button({ children, href, className, ...rest }) {
 	return (
-		<motion.a
-			href={href}
-			variants={animation}
-			initial='hidden'
-			whileInView='show'
-		>
+		<a href={href}>
 			<button
 				className={`btn btn-dark ${className}`}
 				{...rest}
@@ -26,6 +8,6 @@ export default function Button({ children, href, className, ...rest }) {
 			>
 				{children}
 			</button>
-		</motion.a>
+		</a>
 	);
 }

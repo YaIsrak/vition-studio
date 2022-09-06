@@ -2,6 +2,14 @@
   font-family: outfit;
   src: url(../font/Outfit-Regular.ttf);
 }
+@font-face {
+  font-family: outfitBold;
+  src: url(../font/Outfit-ExtraBold.ttf);
+}
+.fontBold {
+  font-family: outfitBold;
+}
+
 * {
   font-family: outfit;
   transition: 0.3s;

@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion';
 import Image from 'next/image';
 // images
 import Kadiza from '../public/images/People/khadiza.jpg';
@@ -25,19 +26,25 @@ function Card({ title, image }) {
 				style={{ borderRadius: '20%' }}
 			>
 				<Image className='img-fluid' alt='' src={image} />
-				<div
+				<motion.div
 					className='position-absolute h-full w-full'
+					initial={{ y: 100 }}
+					whileInView={{ y: 0 }}
+					transition={{ duration: 0.2 }}
 					style={{
 						background:
 							'linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.4) 67%, rgba(0,0,0,1) 100%)',
 					}}
-				></div>
-				<h1
+				></motion.div>
+				<motion.h1
 					className='fw-bold fs-2 py-4 px-5 text-white position-absolute'
+					initial={{ x: -100 }}
+					whileInView={{ x: 0 }}
+					transition={{ type: 'spring', duration: 0.2 }}
 					style={{ bottom: 0 }}
 				>
 					{title}
-				</h1>
+				</motion.h1>
 			</div>
 		</div>
 	);

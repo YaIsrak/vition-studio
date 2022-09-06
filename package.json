@@ -10,6 +10,10 @@
 		"tailbuild": "tailwindcss -i ./styles/css/input.css -o ./styles/css/output.css --watch"
 	},
 	"dependencies": {
+		"@fortawesome/fontawesome-svg-core": "^6.2.0",
+		"@fortawesome/free-regular-svg-icons": "^6.2.0",
+		"@fortawesome/free-solid-svg-icons": "^6.2.0",
+		"@fortawesome/react-fontawesome": "^0.2.0",
 		"bootstrap": "^5.2.0",
 		"framer-motion": "^7.2.1",
 		"next": "12.2.5",

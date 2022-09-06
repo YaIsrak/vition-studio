@@ -2,6 +2,15 @@
 	font-family: outfit;
 	src: url(../font/Outfit-Regular.ttf);
 }
+@font-face {
+	font-family: outfitBold;
+	src: url(../font/Outfit-ExtraBold.ttf);
+}
 
 $font: outfit;
+$fontBold: outfitBold;
 $dark: #0e0e0e;
+
+.fontBold {
+	font-family: $fontBold;
+}

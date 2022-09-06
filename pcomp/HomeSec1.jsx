@@ -10,7 +10,8 @@ const animation = {
 		opacity: 1,
 		y: 0,
 		transiton: {
-			duration: 0.2,
+			ease: 'easeIn',
+			duration: 0.03,
 		},
 	},
 };
@@ -25,8 +26,9 @@ export default function HomeSec1() {
 					initial='hidden'
 					whileInView='show'
 				>
-					We make you hassle free
+					We make you <u className='text-red-500'>hassle</u> free
 				</motion.h1>
+
 				<Button
 					href='mailto:ysdn@gmail.com'
 					className='fs-5 position-relative start-50 translate-middle-x'
