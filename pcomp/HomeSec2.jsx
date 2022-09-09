@@ -41,7 +41,7 @@ const cardItem = {
 
 function Card({ title, image, coming }) {
 	return (
-		<div
+		<motion.div
 			className='col-md-4'
 			whileHover={{ scale: 1.05 }}
 			transition={{ duration: 0.03 }}
@@ -60,6 +60,6 @@ function Card({ title, image, coming }) {
 					<Image className='img-fluid' alt='' src={image} />
 				</motion.div>
 			</motion.div>
-		</div>
+		</motion.div>
 	);
 }

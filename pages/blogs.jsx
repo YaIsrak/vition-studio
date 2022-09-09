@@ -1,29 +1,19 @@
 import BlogPost from '../pcomp/BlogPost';
 import Layout from '../pcomp/Layout';
+import useData from '../hooks/useData';
+import Loading from '../pcomp/Loading';
 
 export default function Blogs() {
-	const posts = [
-		{
-			title: 'Blog',
-			body: 'This is a blog post',
-		},
-		{
-			title: 'Contact',
-			body: 'This is a contact post',
-		},
-		{
-			title: 'Blog',
-			body: 'This is a blog post',
-		},
-	];
+	const { realTimeData, loading } = useData('blogs');
 
 	return (
 		<Layout>
 			<section className='blog'>
 				<div className='container'>
 					<h1 className='display-2 fw-bold'>Blogs</h1>
-					{posts.map((post) => (
-						<BlogPost key={post.title} title={post.title} body={post.body} />
+					{loading && <Loading />}
+					{realTimeData.map((post) => (
+						<BlogPost key={post.id} name={post.name} body={post.discription} />
 					))}
 				</div>
 			</section>
