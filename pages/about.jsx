@@ -1,3 +1,4 @@
+import Head from 'next/head';
 import Image from 'next/image';
 import Layout from '../pcomp/Layout';
 import Logo from '../public/logo.png';
@@ -5,6 +6,9 @@ import Logo from '../public/logo.png';
 export default function About() {
 	return (
 		<Layout>
+			<Head>
+				<title>About | Vition studio</title>
+			</Head>
 			<section className='container'>
 				<div className='row'>
 					<div className='col-md-6'>
